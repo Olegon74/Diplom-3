@@ -49,5 +49,8 @@ public class TransitionsTests {
         Assert.assertEquals("Начинки", homePage.getTextFromSelectedSection());
 
     }
+    public void tearDown() {
+        driver.quit();
+    }
 
 }
