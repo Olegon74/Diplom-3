@@ -30,7 +30,7 @@ public class LoginTest {
         driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
         user = new User(RANDOM_EMAIL, RANDOM_PASS, RANDOM_NAME);
         userClient = new UserClient();
-        ValidatableResponse validatableResponse = userClient.createUser(user);
+        userClient.createUser(user);
     }
     @Test
     @DisplayName("Вход в систему на главной странице, при клике по кнопке Войти")

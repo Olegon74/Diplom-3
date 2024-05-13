@@ -29,7 +29,7 @@ public class LogOutOfYourAccountTest {
         driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
         user = new User(RANDOM_EMAIL, RANDOM_PASS, RANDOM_NAME);
         userClient = new UserClient();
-        ValidatableResponse validatableResponse = userClient.createUser(user);
+        userClient.createUser(user);
     }
     @Test
     @DisplayName("Проверка, выход по кнопке «Выйти» в личном кабинете")
